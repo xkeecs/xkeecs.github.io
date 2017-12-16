@@ -18,8 +18,17 @@
     <body>
         <!--这里放音乐哦 -->
 		<audio autoplay="autopaly">
-			<source src="./jiandanai.mp3" audio="" mp3"="">
+			<source src="./jiandanai.mp3" id="Jaudio" audio="" mp3"="" autoplay preload loop="loop">
 		</audio>
+
+  function audioAutoPlay(id){
+    var audio = document.getElementById(id);
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+    }, false);
+}
+audioAutoPlay('Jaudio');
 
         <div id="main">
             <!-- 不兼容的提醒 -->
