@@ -21,15 +21,17 @@
 		<audio id="Jaudio" class="media-audio" autoplay="autopaly" loop="loop" src="./jiandanai.mp3">
 		</audio>
 <script>
-    function audioAutoPlay(id){
-        var audio = document.getElementById(id);
-        audio.play();
-        document.addEventListener("WeixinJSBridgeReady", function () {
-                audio.play();
-        }, false);
-    }
+document.addEventListener('DOMContentLoaded', function (){
+  function audioAutoPlay(id){
+      var audio = document.getElementById(id);
+      audio.play();
+      document.addEventListener("WeixinJSBridgeReady", function () {
+              audio.play();
+      }, false);
+  }
+  audioAutoPlay('Jaudio');
+}
 
-    audioAutoPlay('Jaudio');
 </script>
         <div id="main">
             <!-- 不兼容的提醒 -->
