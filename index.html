@@ -18,8 +18,7 @@
 </head>
     <body>
         <!--这里放音乐哦 -->
-		<audio id="Jaudio" autoplay="autopaly">
-			<source src="./jiandanai.mp3" audio="" mp3"="" loop="loop">
+		<audio id="Jaudio" autoplay="autopaly" loop="loop" src="./jiandanai.mp3">
 		</audio>
 <script>
     function audioAutoPlay(id){
@@ -29,6 +28,7 @@
                 audio.play();
         }, false);
     }
+
     audioAutoPlay('Jaudio');
 </script>
         <div id="main">
